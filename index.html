@@ -1,47 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-S">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, initial=scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <img src="images/pic.png" alt="pic" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Hire Me</a></li>
-            </ul>
-        </nav>
-        <div class="detel">
-            <h1>I,m Khushi<span>Chandravanshi</span></h1>
-            <p>This is my official portfolio website to showes all
-                <br>Details and work exerience web development
-            </p>
-        <a href="nyka.html">website</a>
-              <a href="developer.html">practices</a>
-              <a href="zomato.html">raw data</a>
+    <!-- header section -->
+    <header>
+        <section class="header">
+            <div class="profile">
+                <img class="profile-image" src="https://i.ibb.co/N14DD7m/img.jpg" height="180px" alt="profile_image">
+            </div>
+            <div class="about-right">
+                <h5 class="title">Hello</h5>
+                <h1 class="title2">I'm <span id="name"><strong style="color: rgb(138, 150, 150);">Khushi Chandravanshi</strong></span></h1>
+                <h3 style="font-size: 0.9rem; font-family:Verdana, Geneva, Tahoma, sans-serif; margin-left: 80px;">Full Stack Web Developer | AI Enthusiast</h3><br>
+                <p id="About">Innovative Software Developer <br/> Passionate and results-driven software developer with a strong foundation in full stack web development and a keen interest in artificial intelligence. I am a dedicated software developer specializing in the MERN stack, adept at crafting dynamic and responsive web applications. My proficiency in MongoDB, Express.js, React, and Node.js enables me to build scalable solutions that deliver seamless user experiences. I have a strong passion for coding and a keen interest in exploring emerging technologies, which drives me to continually enhance my skills and stay updated with industry trends.
+
+                    Collaboration is at the heart of my work ethic. I thrive in team environments where I can contribute ideas and solutions, while also learning from others. I believe that effective communication and a shared vision are key to successful project outcomes. My attention to detail and commitment to best practices ensure that the software I develop is not only functional but also maintainable and efficient.
+                    
+                    Outside of development, I enjoy [mention a hobby or interest, e.g., participating in hackathons, contributing to open source projects, or exploring new tech trends], which helps fuel my creativity and passion for technology. I am excited about the opportunity to contribute to innovative projects and make a positive impact through my work.</p>
+            </div>
+        </section>
+        <hr>
+    </header>
+
+    <!-- skills section -->
+    <div class="skills">
+        <h2>Skills</h2>
+        <div id="skillsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-around">
+                        <div class="skill">
+                            <h4>HTML</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#htmlModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>CSS</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#cssModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>JavaScript</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#jsModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="skill">
+                            <h4>React</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#reactModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>Node.js</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#nodeModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>Python</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#pythonModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="skill">
+                            <h4>Express</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#reactModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>Mongodb</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#nodeModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>Power Bi</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#pythonModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="skill">
+                            <h4>Bootstrap</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#djangoModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>SQL</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#sqlModal">Learn More</button>
+                        </div>
+                        <div class="skill">
+                            <h4>Git</h4>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#gitModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#skillsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-     </div>
-     <p style="background-color:skyblue">i am a full stack software engineer i am belonging from computer science engineering background. i am searching to placed in nmc's</p>
-     <footer>
-        <div style="width: 80px;
-        height:35px;
-        background-color: rgb(249,61,92);
-        color:white;
-        font-size:17px;
-        border:none;
-        border-radius:5px;"></div>
-            <input type="text" placeholder="Search Nykaa">
-            <button>Sign In</button>
+    </div>
+    
+    <!-- Modals -->
+    <div class="modal fade" id="htmlModal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="htmlModalLabel">HTML</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>HTML is the standard markup language for creating web pages.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-     </footer>
+    </div>
+    
+    <!-- Repeat modals for each skill -->
+    <div class="modal fade" id="cssModal" tabindex="-1" role="dialog" aria-labelledby="cssModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cssModalLabel">CSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>CSS is a stylesheet language used for describing the presentation of a document written in HTML.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="jsModal" tabindex="-1" role="dialog" aria-labelledby="jsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jsModalLabel">JavaScript</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>JavaScript is a programming language that enables interactive web pages.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add modals for React, Node.js, Python, Django, SQL, and Git similarly -->
+    
+    
+    
+
+    <!-- projects section with carousel -->
+    <section class="projects py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.ibb.co/cxhw7x0/red.jpg" class="d-block w-100" alt="Project 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><button type="button" class="btn btn-dark" data-dismiss="modal"><a href="https://khushichandravanshi.github.io/website_combo/">Click Here</a></button></h5>
+                            <p>Project 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/6RQbpJV/blue.jpg" class="d-block w-100" alt="Project 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><button type="button" class="btn btn-dark" data-dismiss="modal"><a href="https://inquisitive-rugelach-bb3174.netlify.app">Click Here</a></button></h5>
+                            <p> Project 2.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/cxhw7x0/red.jpg"class="d-block w-100" alt="Project 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><button type="button" class="btn btn-dark" data-dismiss="modal"><a href="https://quiet-swan-b07695.netlify.app">Click Here</a></button></h5>
+                            <p> Project 3</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/k3Rmz9F/black.jpg"class="d-block w-100" alt="Project 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><button type="button" class="btn btn-dark" data-dismiss="modal"><a href="https://khushichandravanshi.github.io/Weather-App/">Click Here</a></button></h5>
+                            <p> Project 4</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/cxhw7x0/red.jpg"class="d-block w-100" alt="Project 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><button type="button" class="btn btn-dark" data-dismiss="modal"><a href="https://vermillion-kelpie-ddf8d6.netlify.app">Click Here</a></button></h5>
+                            <p style="color:black;"> Project 5</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section location -->
+    <section>
+        <div class="map">
+            <h2>Location</h2>
+            <div class="mymap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30774640.13344958!2d60.97700358947485!3d19.68408201438568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1726246450451!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- footer -->
+    <footer id="sociallink">
+        <h2 id="footer_h3">Social Link</h2>
+        <hr>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/khushi-c-a52a64274/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/khushi-c-a52a64274/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/khushi-c-a52a64274/" target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
+            <li><a href="https://github.com/khushichandravanshi" target="_blank"><i class="ri-github-fill"></i></a></li>
+        </ul>
+        <hr>
+        <p>
+            <h5 class="footer-heading">&copy; Khushi Developer</h5>
+            <div class="footer-detail">
+                <span id="footer-detail">E-mail: <i class="ri-mail-fill"></i></span>
+                <a href="https://mail.google.com/" target="_blank"><span id="footer-detail"> khushichandravanshi377@gmail.com</span></a>
+            </div>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
